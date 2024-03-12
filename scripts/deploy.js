@@ -6,10 +6,10 @@ async function main() {
 
   const networkName = "sepolia";
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://eth-sepolia.g.alchemy.com/v2/demo"
+    "https://sepolia.infura.io/v3/1048b9439d4f42d9a8c4b05b429bb4ab"
   );
   const signer = new ethers.Wallet(
-    "YOUR PRIVATE KEY OF METAMASK",
+    "0x6Ac4fe48B1BA838e283eEa22E52323C523A8442E",
     provider
   ); // Replace with your own private key
   const connectedUpload = upload.connect(signer);
